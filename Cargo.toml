@@ -54,10 +54,10 @@ alloy-evm = { version = "0.10.0", default-features = false }
 alloy-network = { version = "1.0.9", default-features = false }
 
 # OP Alloy
-op-alloy-network = { version = "0.17.2", default-features = false }
-op-alloy-consensus = { version = "0.17.2", default-features = false }
-op-alloy-rpc-types-engine = { version = "0.17.2", default-features = false }
-op-alloy-rpc-types = { version = "0.17.2", default-features = false }
+op-alloy-network = { version = "0.18.14", default-features = false }
+op-alloy-consensus = { version = "0.18.14", default-features = false }
+op-alloy-rpc-types-engine = { version = "0.18.14", default-features = false }
+op-alloy-rpc-types = { version = "0.18.14", default-features = false }
 
 # General
 lru = "0.12.5"
