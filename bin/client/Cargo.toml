@@ -28,6 +28,9 @@ alloy-evm.workspace = true
 op-revm.workspace = true
 op-alloy-consensus.workspace = true
 
+# MegaEth
+kona-megaevm.workspace = true
+
 [features]
 default = ["client-tracing"]
 client-tracing = ["kona-std-fpvm/tracing"]

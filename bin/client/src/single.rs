@@ -1,6 +1,5 @@
 use alloc::sync::Arc;
 use alloy_consensus::Sealed;
-use alloy_evm::{EvmFactory, FromRecoveredTx, FromTxWithEncoded};
 use alloy_primitives::B256;
 use core::fmt::Debug;
 use hana_celestia::{CelestiaDADataSource, CelestiaDASource};
@@ -9,6 +8,7 @@ use kona_client::single::FaultProofProgramError;
 use kona_derive::sources::EthereumDataSource;
 use kona_driver::Driver;
 use kona_executor::TrieDBProvider;
+use kona_megaevm::LazyMegaEvmFactory;
 use kona_preimage::{CommsClient, HintWriterClient, PreimageKey, PreimageOracleClient};
 use kona_proof::{
     errors::OracleProviderError,
@@ -18,22 +18,18 @@ use kona_proof::{
     sync::new_oracle_pipeline_cursor,
     BootInfo, CachingOracle, HintType,
 };
-use op_alloy_consensus::OpTxEnvelope;
-use op_revm::OpSpecId;
 use tracing::{error, info};
 
 /// Executes the fault proof program with the given [PreimageOracleClient] and [HintWriterClient].
 #[inline]
-pub async fn run<P, H, Evm>(
+pub async fn run<P, H>(
     oracle_client: P,
     hint_client: H,
-    evm_factory: Evm,
+    evm_factory: LazyMegaEvmFactory,
 ) -> Result<(), FaultProofProgramError>
 where
     P: PreimageOracleClient + Send + Sync + Debug + Clone,
     H: HintWriterClient + Send + Sync + Debug + Clone,
-    Evm: EvmFactory<Spec = OpSpecId> + Send + Sync + Debug + Clone + 'static,
-    <Evm as EvmFactory>::Tx: FromTxWithEncoded<OpTxEnvelope> + FromRecoveredTx<OpTxEnvelope>,
 {
     const ORACLE_LRU_SIZE: usize = 1024;
 
