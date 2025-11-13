@@ -31,7 +31,7 @@ kona-host = { git = "https://github.com/op-rs/kona", tag = "kona-client/v1.0.2" 
 kona-cli = { git = "https://github.com/op-rs/kona", tag = "kona-client/v1.0.2" }
 
 # MegaEVM
-kona-megaevm = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce" }
+kona-megaevm = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87" }
 
 # Alloy
 alloy-rlp = { version = "0.3.12", default-features = false }
@@ -116,18 +116,18 @@ debug = 1
 lto = true
 
 [patch."https://github.com/op-rs/kona"]
-kona-cli = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce", package = "kona-cli" }
-kona-client = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce", package = "kona-client" }
-kona-derive = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce", package = "kona-derive" }
-kona-driver = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce", package = "kona-driver" }
-kona-executor = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce", package = "kona-executor" }
-kona-genesis = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce", package = "kona-genesis" }
-kona-host = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce", package = "kona-host" }
-kona-mpt = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce", package = "kona-mpt" }
-kona-preimage = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce", package = "kona-preimage" }
-kona-proof = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce", package = "kona-proof" }
-kona-protocol = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce", package = "kona-protocol" }
-kona-registry = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce", package = "kona-registry" }
-kona-std-fpvm = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce", package = "kona-std-fpvm" }
-kona-providers-alloy = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce", package = "kona-providers-alloy" }
-kona-std-fpvm-proc = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "3e87d9524a74b8c64927d0eef9ecb5c5b91f45ce", package = "kona-std-fpvm-proc" }
+kona-cli = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87", package = "kona-cli" }
+kona-client = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87", package = "kona-client" }
+kona-derive = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87", package = "kona-derive" }
+kona-driver = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87", package = "kona-driver" }
+kona-executor = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87", package = "kona-executor" }
+kona-genesis = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87", package = "kona-genesis" }
+kona-host = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87", package = "kona-host" }
+kona-mpt = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87", package = "kona-mpt" }
+kona-preimage = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87", package = "kona-preimage" }
+kona-proof = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87", package = "kona-proof" }
+kona-protocol = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87", package = "kona-protocol" }
+kona-registry = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87", package = "kona-registry" }
+kona-std-fpvm = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87", package = "kona-std-fpvm" }
+kona-providers-alloy = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87", package = "kona-providers-alloy" }
+kona-std-fpvm-proc = { git = "https://github.com/megaeth-labs/mega-kona.git", rev = "95cf8d6921a2181e45efc9ce1bfe65ed5c013b87", package = "kona-std-fpvm-proc" }

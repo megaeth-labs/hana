@@ -43,7 +43,8 @@ fn main() -> Result<(), String> {
             .expect("Failed to set tracing subscriber");
     }
 
-    let evm_factory = FpvmMegaEvmFactory::new(HINT_WRITER.clone(), ORACLE_READER.clone()).build_factory();
+    let evm_factory =
+        FpvmMegaEvmFactory::new(HINT_WRITER.clone(), ORACLE_READER.clone()).build_factory();
     kona_proof::block_on(hana_client::single::run(
         ORACLE_READER,
         HINT_WRITER,
